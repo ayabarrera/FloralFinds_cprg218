@@ -1,0 +1,20 @@
+.accordion {
+    
+  }
+  
+  .active, .accordion:hover {
+    
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+   
+  }

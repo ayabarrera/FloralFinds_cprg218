@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+    300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/photo.css">
+    <link rel="stylesheet" href="styles/testi.css">
+    <link rel="stylesheet" href="styles/accordion.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/index.js"></script>
+    <script src="js/accordion.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.jpg">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#news">ABOUT</a></li>
+                        <li><a href="#contact">SHOP</a></li>
+                        <li><a href="#about">CONTACT US</a></li>
+                    </ul>
+        </nav>
+    </section>
+    <!--HERO-->
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/img-1.jpg" class="img-content">
+                <div class="text">Monty</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/img-2.JPG" class="img-content">
+                <div class="text">Ham</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/img-3.JPG" class="img-content">
+                <div class="text">Cookie</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!--ABOUT-->
+    <section class="about">
+        <div class="about-section">
+            <h1>Floral Finds</h1>
+            <p>Welcome to Floral Finds - your local flower shop!
+                We are dedicated to providing you with the highest quality flower arrangements for any occasion.
+                From birthdays to weddings, our expert florists will create perfect bouquet to brighten up your day.
+                Order and let us deliver a smile to your loved ones!</p>
+        </div>
+    </section>
+
+    <!--VIDEO-->
+    <section class="video">INSERT VIDEO HERE
+    </section>
+
+    <!-- Photo Grid -->
+    <section class="photo">
+        <div class="card-container">
+            <div class="photocard">
+                <img src="images/img-1.jpg">
+                <div class="card-content">
+                    <h2>Seasonal Ceramic Vase Arrangement</h2>
+                    <p>From C$30.00</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="photocard">
+                <img src="images/img-1.jpg">
+                <div class="card-content">
+                    <h2>Classic Hand-Tied Bouquet/Arrangement</h2>
+                    <p>From C$20.00</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="photocard">
+                <img src="images/img-1.jpg">
+                <div class="card-content">
+                    <h2>Colourful Celebration Arrangement</h2>
+                    <p>From C$100.00</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="photocard">
+                <img src="images/img-1.jpg">
+                <div class="card-content">
+                    <h2>Floral Finds Special<br>Bouquet/Arrangement</h2>
+                    <p>From $20.00</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Card (reviews)-->
+    <section class="testimonials">
+        <h1>See What Our Customers Have To Say</h1>
+        </div>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis rerum, consectetur doloribus tenetur assumenda corporis
+                        itaque accusantium sint numquam recusandae ad quae quos fuga vitae culpa
+                        repellat quisquam, dicta atque!</p>
+                    <h3>Alyanna Barrera</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis rerum, consectetur doloribus tenetur assumenda corporis
+                        itaque accusantium sint numquam recusandae ad quae quos fuga vitae culpa
+                        repellat quisquam, dicta atque!</p>
+                    <h3>Tasia Morris-Anderson</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis rerum, consectetur doloribus tenetur assumenda corporis
+                        itaque accusantium sint numquam recusandae ad quae quos fuga vitae culpa
+                        repellat quisquam, dicta atque!</p>
+                    <h3>Justin Tayo</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis rerum, consectetur doloribus tenetur assumenda corporis
+                        itaque accusantium sint numquam recusandae ad quae quos fuga vitae culpa
+                        repellat quisquam, dicta atque!</p>
+                    <h3>Karl Alonzo</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Accordion (FAQS)-->
+    <section class="accordion">
+
+        <h2>FAQ'S ->>>> THIS IS AN ACCORDION </h2>
+        <p>Commonly Asked Questions</p>
+
+        <button class="accordion">When will my orders be delivered?</button>
+        <div class="panel">
+            <p>Orders are delivered according to the date selected at checkout.
+                Deliveries are made up until 6pm.
+                You will receive a notice via email once flowers are dropped off.</p>
+        </div>
+
+        <button class="accordion">How do I take care of my flowers?</button>
+        <div class="panel">
+            <p>Upon delivery, we recommend recutting stems and placing flowers into a vase with warm water and the
+                flower food provided.
+                We recommend changing water every couple of days.</p>
+        </div>
+
+        <button class="accordion">Do you create flower arrangements for weddings and events?</button>
+        <div class="panel">
+            <p>LWe regularly prepare flowers for home and corporate events, as well as weddings.
+                Please email or call for more information.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <h4>Contact Us</h4>
+        <p>123 Anywhere St. <br> Alberta, Canada <br> T2M 2C5</p>
+
+        <h4>Opening Hours</h4>
+        <p>Monday - Saturday: 7 am to 8 pm <br> Sunday: 8am to 6 pm</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+
+    </section>
+</body>
+
+</html>
