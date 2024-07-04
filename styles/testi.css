@@ -15,11 +15,6 @@
   background-color: rgba(30, 60, 26, 0.62);
 }
 
-.testimonials h1 {
-  color: white;
-  font-size: 50px;
-}
-
 
 .testimonial-col {
   border-radius: 10px;
@@ -45,6 +40,7 @@
   font-style: italic;
   margin-top: 10px;
   text-align: justify;
+  font-size: 12px;
 }
 
 .testimonial-col h3 {
@@ -80,7 +76,7 @@
 
 #feedback {
   color: whitesmoke;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* FOR RESPONSIVENESS */
