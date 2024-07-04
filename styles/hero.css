@@ -28,7 +28,6 @@
     margin: 0 auto;
     overflow: hidden;
     padding-top: 20px;
-    border-radius: 20px;
   
   }
   
@@ -63,19 +62,6 @@
     color: white;
   }
   
-  /* Caption text */
-  .text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.3)
-    
-  }
-  
   /* Fading animation */
   .fade {
     animation-name: fade;
@@ -107,3 +93,30 @@
   .active, .dot:hover {
     background-color: #717171;
   }
+
+  .herobtn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .shopfresh {
+    padding: 8px 16px;
+    background-color: rgba(15, 59, 10, 0.71);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+}
+
+.shopfresh:hover {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white; 
+}

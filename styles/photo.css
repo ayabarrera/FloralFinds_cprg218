@@ -2,6 +2,21 @@
     background-color: rgba(240, 238, 235, 0.436);
 }
 
+.summer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    color: rgb(18, 29, 18);
+}
+
+.spring {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #474545;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -10,12 +25,12 @@
 }
 
 .photocard {
-width: 280px;
-background-color: #f0f0f0;
-border-radius: 8px;
-overflow: hidden;
-box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-margin: 20px;
+    width: 280px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
 .photocard img {
@@ -46,5 +61,42 @@ margin: 20px;
     border-radius: 4px;
     margin-top: 16px;
     color: white;
+    font-size: 12px;
 }
 
+.card-content .btn:hover {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(15, 59, 10, 0.71);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: white;
+}
+
+
+.viewbtn {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.view {
+    padding: 8px 16px;
+    background-color: rgba(15, 59, 10, 0.71);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+}
+
+.view:hover {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white; 
+}
