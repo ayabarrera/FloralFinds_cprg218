@@ -6,9 +6,8 @@
     background-size: cover;
   }
 
-  .hero{
+  .hero {
     background-color: rgba(240, 238, 235, 0.436);
-    padding-top: 20px;
   }
   
   .mySlides {
@@ -19,6 +18,7 @@
     max-width: 100%;
     height: 100%;
     display: inline-block;
+    border-radius: 10px;
   }
   
   .slideshow-container  {
@@ -28,7 +28,7 @@
     margin: 0 auto;
     overflow: hidden;
     padding-top: 20px;
-  
+    border-radius: 10px;
   }
   
   /* Next & previous buttons */
