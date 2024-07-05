@@ -14,7 +14,7 @@
 
     <!-- STARS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!--CSS-->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/about.css">
@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="styles/testi.css">
     <link rel="stylesheet" href="styles/accordion.css">
     <link rel="stylesheet" href="styles/footer.css">
-
+    <!--JS-->
     <script src="js/index.js"></script>
+    <script src="js/accordion.js"></script>
     <title>Document</title>
 </head>
 
@@ -109,19 +110,24 @@
         </div>
         <div class="videosection">
             <h1>Summer Sprite</h1>
-            <p>Coreopsis lanceolata, Features solitary, yellow, daisy-like flowers (1-2" diameter) with eight yellow rays 
-                (toothed at the tips) and flat yellow center disks. Easily grown in dry to medium moisture, 
-                well-drained soil in full sun. Thrives in poor, sandy or rocky soils with good drainage. Tolerant of heat, humidity and drought.</p>
+            <p>Coreopsis lanceolata, features solitary, yellow, daisy-like flowers (1-2" diameter) with eight yellow
+                rays
+                (toothed at the tips) and flat yellow center disks. Easily grown in dry to medium moisture,
+                well-drained soil in full sun. Thrives in poor, sandy or rocky soils with good drainage. Tolerant of
+                heat, humidity and drought.</p>
             <div class="videobtn">
-            <button type="button" class="video-btn" onclick="alert('Sorry, the website is currently down.')">Learn More</button>
-        </div>
+                <button type="button" class="video-btn" onclick="alert('Sorry, the website is currently down.')">Learn
+                    More</button>
+            </div>
         </div>
     </section>
 
     <!-- Photo Grid -->
     <section class="photo">
-        <h2 class="summer">SPRING BOUQUETS</h2>
-        <p class="spring">Step into spring with a colourful bouquet</p>
+        <div class="header-p">
+            <h2>SPRING BOUQUETS</h2>
+            <p>Step into spring with a colourful bouquet</p>
+        </div>
         <div class="card-container">
             <div class="photocard">
                 <img src="images/card1.jpg">
@@ -240,28 +246,61 @@
 
     <!--Accordion (FAQS)-->
     <section class="accordion">
-
-        <h2>FAQ'S ->>>> THIS IS AN ACCORDION </h2>
-        <p>Commonly Asked Questions</p>
-
-        <button class="accordion">When will my orders be delivered?</button>
-        <div class="panel">
-            <p>Orders are delivered according to the date selected at checkout.
-                Deliveries are made up until 6pm.
-                You will receive a notice via email once flowers are dropped off.</p>
+        <div class="header-a">
+            <h2>FREQUENTLY ASKED QUESTIONS </h2>
         </div>
+        <div class="button-accordion">
+            <button class="accordionbtn">
+                <h3>When will my orders be delivered?</h3>
+            </button>
+            <div class="panel">
+                <p>Orders are delivered according to the date selected at checkout.
+                    Deliveries are made up until 6pm.
+                    You will receive a notice via email once flowers are dropped off.</p>
+            </div>
 
-        <button class="accordion">How do I take care of my flowers?</button>
-        <div class="panel">
-            <p>Upon delivery, we recommend recutting stems and placing flowers into a vase with warm water and the
-                flower food provided.
-                We recommend changing water every couple of days.</p>
-        </div>
+            <button class="accordionbtn">
+                <h3>Can I include a personalized message with my flowers?</h3>
+                </How>
+            </button>
+            <div class="panel">
+                <p>Yes! Basic note cards are included in any flower package (3.5" x 5").
+                    When placing your order, you will asked what message you want to include with your order.</p>
+            </div>
 
-        <button class="accordion">Do you create flower arrangements for weddings and events?</button>
-        <div class="panel">
-            <p>LWe regularly prepare flowers for home and corporate events, as well as weddings.
-                Please email or call for more information.</p>
+            <button class="accordionbtn">
+                <h3>How far in advance should I place my order?</h3>
+            </button>
+            <div class="panel">
+                <p>The ideal timeframe for placing your order depends on the type of arrangement and the scale of your
+                    event.
+                    For standard arrangements and everyday bouquets,
+                    we recommend placing your order at least 1 to 2 days in advance to ensure we have ample time to
+                    prepare and deliver your flowers fresh and on time.
+                    <br><br>Regardless of the occasion, our goal is to provide you with beautiful, fresh flowers that
+                    exceed your expectations. Feel free to contact us directly
+                    if you have any questions or need assistance with placing your order—we're here to help make your
+                    floral experience seamless and memorable.
+                </p>
+            </div>
+
+            <button class="accordionbtn">
+                <h3>How do I take care of my flowers?</h3>
+                </How>
+            </button>
+            <div class="panel">
+                <p>Upon delivery, we recommend recutting stems and placing flowers into a vase with warm water and the
+                    flower food provided.
+                    We recommend changing water every couple of days.</p>
+            </div>
+
+            <button class="accordionbtn">
+                <h3>Do you create flower arrangements for weddings and events?</h3>
+            </button>
+            <div class="panel">
+                <p>We regularly prepare flowers for home and corporate events, as well as weddings.
+                    Please email or call for more information.</p>
+            </div>
         </div>
     </section>
 
