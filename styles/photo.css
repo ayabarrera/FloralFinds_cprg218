@@ -1,22 +1,26 @@
-    .photo {
+/* this is the section container */
+.photo {
     background-color: rgba(240, 238, 235, 0.436);
 }
 
-.summer {
+/* Header */
+.header-p {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 10px;
-    letter-spacing: 3px;
-    color: rgb(18, 29, 18);
 }
 
-.spring {
-    text-align: center;
+.header-p h2 {
+    letter-spacing: 3px;
+    color: rgb(18, 29, 18);
+    padding-bottom: 5px;
+}
+
+.header-p p {
     font-style: italic;
     font-size: 16px;
     color: #474545;
 }
-
+ /* container for cards*/
 .card-container {
     display: flex;
     justify-content: center;
@@ -24,6 +28,7 @@
     margin-top: 10px;
 }
 
+/* container for img and texts*/
 .photocard {
     width: 280px;
     background-color: #f0f0f0;
@@ -53,6 +58,7 @@
     line-height: 1.3;
 }
 
+/* quick view button */
 .card-content .btn {
     display: inline-block;
     padding: 8px 16px;
@@ -74,15 +80,16 @@
     color: white;
 }
 
-
+/* view all button*/
 .viewbtn {
     display: flex;
     justify-content: center;
     padding: 50px;
 }
+
 .view {
     padding: 8px 16px;
-    background-color: rgba(15, 59, 10, 0.71);
+    background-color: #333;
     text-decoration: none;
     border-radius: 10px;
     margin-top: 16px;
@@ -94,9 +101,9 @@
 .view:hover {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #333;
+    background-color: rgb(31, 81, 25);
     text-decoration: none;
     border-radius: 10px;
     margin-top: 16px;
-    color: white; 
+    color: white;
 }
