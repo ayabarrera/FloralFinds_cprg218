@@ -1,5 +1,5 @@
 .video {
-    background-color: #5C6E58;
+    background-color: #2b3d27;
     padding-top: 50px;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -57,7 +57,7 @@
 .video-btn:hover {
     display: inline-block;
     padding: 8px 16px;
-    background-color: rgba(15, 59, 10, 0.71);
+    background-color: rgba(38, 106, 32, 0.71);
     text-decoration: none;
     border-radius: 10px;
     margin-top: 16px;
