@@ -1,20 +1,109 @@
 .accordion {
-    
-  }
+  background-color: rgba(240, 238, 235, 0.436);
+  color: rgb(18, 29, 18);
+  padding: 60px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/* header container FAQS &*/
+.header-a {
+  padding: 40px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ece5e5de;
+  border-radius: 8px;
+}
+
+/*div for whole accordion button*/
+.button-accordion {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #2b3d27;
+  border-radius: 8px;
+}
+
+/* accordionbutton */
+.accordionbtn {
+  background-color: #2b3d27;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+
+
+.accordionbtn:hover {
+  background-color: #ece5e5;
+  color: #444;
+  /* padding: 24px; */
+}
+
+/*when button is clicked*/
+.active {
+  color: whitesmoke;
+  background-color: #2b3d27;
+  font-style: italic;
+  text-decoration: underline;
   
-  .active, .accordion:hover {
-    
+}
+/* */
+
+.accordionbtn:after {
+  content: '\002B';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/*whats inside the button*/
+.panel {
+  padding: 0 18px;
+  background-color: #5d7059;
+  color: #ece5e5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 8px;
+}
+
+.panel p {
+  padding: 20px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 300px) and (max-width:768px) {
+  .accordion {
+    padding: 20px;
+    font-size: 13px;
   }
-  
-  .accordion:after {
-    content: '\002B';
-    
+
+  .button-accordion, .header-a {
+    max-width: 95%;
   }
-  
-  .active:after {
-    content: "\2212";
+
+  .accordionbtn {
+    padding: 16px;
+    font-size: 14px;
   }
-  
-  .panel {
-   
+
+  .panel p {
+    padding: 12px;
+    font-size: 14px;
   }
+}

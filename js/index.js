@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slideIndex = slides.length;
         }
 
-        
+
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
