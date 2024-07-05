@@ -10,4 +10,59 @@
     display: flex;
     justify-content: center;
     align-content: center;
+
+width: 100%;  /* Set width to 100% for responsiveness */
+max-width: 1000px; /* Max width to constrain size on larger screens */
+box-sizing: border-box; /* Include padding and border in width */
+} 
+
+.video video {
+width: 100%;
+height: auto;
+max-width: 800px; /* Max width for the video element */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+.video {
+    max-width: 900px;
+}
+
+.video video {
+    max-width: 700px;
+}
+}
+
+@media (max-width: 992px) {
+.video {
+    max-width: 700px;
+}
+
+.video video {
+    max-width: 600px;
+}
+}
+
+@media (max-width: 768px) {
+.video {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.video video {
+    max-width: 500px;
+}
+}
+
+@media (max-width: 576px) {
+.video {
+    max-width: 100%;
+    margin: 15px;
+    padding: 15px;
+}
+
+.video video {
+    max-width: 100%;
+}
 }
