@@ -65,25 +65,21 @@ hr {
 @media (max-width: 768px) {
   .about-section {
     padding: 20px;
-    /* Adjust padding for smaller screens */
   }
 
   .about-section h1 {
     font-size: 24px;
-    /* Adjust font size for smaller screens */
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
   .about-section p {
     font-size: 12px;
-    /* Adjust font size for smaller screens */
     padding-bottom: 10px;
   }
 
   .abt {
     font-size: 10px;
-    /* Adjust font size for smaller screens */
     margin-top: -10px;
   }
 }

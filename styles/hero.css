@@ -116,3 +116,25 @@
     margin-top: 16px;
     color: white; 
 }
+
+
+
+@media (max-width: 540px) {
+
+
+  .prev,
+  .next {
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  .slideshow-container {
+    max-width: 90%; 
+}
+
+.shopfresh {
+  font-size: 10px;
+  width: 70%; 
+  max-width: 150px; 
+}
+}
