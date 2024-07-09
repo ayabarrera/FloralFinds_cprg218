@@ -26,30 +26,36 @@
     <!--JS-->
     <script src="js/index.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/topnav.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <!--HEADER-->
     <section class="header">
-        <nav>
-            <a href="index.html"> <img src="images/logo.png">
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#shop">SHOP</a></li>
-                        <li><a href="#contact">CONTACT US</a></li>
-                        <li class="dropdown">
-                            <button class="dropbtn"><i class="fa fa-bars"></i></button>
-                            <div class="dropdown-content">
-                                <a href="#">FAQ's</a>
-                                <a href="#">Workshops</a>
-                                <a href="#">Review</a>
-                        </li>
-                    </ul>
+        <nav class="navbar">
+            <div class="navlogo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">HOME</a>
+                <a href="#news">ABOUT</a>
+                <a href="#contact">WORKSHOPS</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CONTACT US
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </nav>
     </section>
+
 
     <!--HERO-->
     <section class="hero">
@@ -167,7 +173,6 @@
                 All</button>
         </div>
     </section>
-
 
     <!--Card (reviews)-->
     <section class="testimonials">
@@ -306,10 +311,10 @@
 
     <!--FOOTER-->
     <section class="footer">
-        <h4>Contact Us</h4>
+        <h4>CONTACT US</h4>
         <p>123 Anywhere St. <br> Alberta, Canada <br> T2M 2C5</p>
 
-        <h4>Opening Hours</h4>
+        <h4>OPENING HOURS</h4>
         <p>Monday - Saturday: 7 am to 8 pm <br> Sunday: 8am to 6 pm</p>
 
         <div class="icons">
@@ -319,6 +324,6 @@
         </div>
 
     </section>
+    
 </body>
-
 </html>

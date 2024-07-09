@@ -1,6 +1,6 @@
 
   body {
-    background-image: url(https://images.unsplash.com/photo-1655712001226-37df6c2733ce?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1523766775147-152d0d6e2adb?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-color: beige;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
   
   .img-content {
     max-width: 100%;
-    height: auto; /* Ensure images maintain aspect ratio */
+    height: auto;
     display: block;
     border-radius: 10px;
   }
@@ -31,7 +31,6 @@
     border-radius: 10px;
   }
   
-  /* Next & previous buttons */
   .prev,
   .next {
     cursor: pointer;
@@ -47,10 +46,9 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: white;
-    z-index: 1000; /* Ensure buttons are above other elements */
+    z-index: 1000;
   }
   
-  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
