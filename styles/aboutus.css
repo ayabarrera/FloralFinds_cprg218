@@ -17,3 +17,16 @@ overflow: hidden; /* Ensure the border wraps tightly around the image */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 0%; /* Make the image rounded */
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hero-container {
+        max-width: 400px; /* Smaller max-width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-container {
+        max-width: 200px; /* Smaller max-width for mobile phones */
+    }
+}
