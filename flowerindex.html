@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <!-- STARS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/photo.css">
+    <link rel="stylesheet" href="styles/testi.css">
+    <link rel="stylesheet" href="styles/accordion.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/flowerindex.css">
+    <script src="js/flowerindex.js"></script>
+    <title>INDEX CHANGE THIS</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="navlogo">
+                <a href="index.html"><img src="images/logo.png" alt="Floral Finds Logo"></a>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="flowerindex.html" class="active">INDEX CHANGE THIS</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CONTACT US
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Location</a>
+                        <a href="#">FAQ's</a>
+                        <a href="#">Message Us!</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </section>
+    <div class="about-section">
+        <h1>Bouquets for Every Occasion</h1>
+        <p>Browse through our collection of stunning bouquets designed for various celebrations. Whether you're planning
+            a wedding, a birthday, an everyday gesture, or an anniversary, discover how we've brought joy to our
+            customers with our exquisite floral arrangements. Let our past creations inspire your next floral choice!
+        </p>
+        <label for="occasion-select" class="container">Choose an occasion:</label>
+        <select id="occasion-select" class="selectContainer">
+            <option value="option">~ choose an occasion ~</option>
+            <option value="birthday">Birthday</option>
+            <option value="wedding">Wedding</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="ceramic">Everyday</option>
+        </select>
+    </div>
+    </div>
+    <div id="image-container" class="cards-container"></div>
+
+</body>
+
+</html>

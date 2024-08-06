@@ -74,8 +74,8 @@
 /*whats inside the button*/
 .panel {
   padding: 0 18px;
-  background-color: #5d7059;
-  color: #ece5e5;
+  background-color: #ece5e5de;
+  color: black;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;

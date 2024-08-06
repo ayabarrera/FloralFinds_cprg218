@@ -20,10 +20,8 @@
     <link rel="stylesheet" href="styles/accordion.css">
     <link rel="stylesheet" href="styles/footer.css">
     <!--JS-->
-    <script src="js/index.js"></script>
     <script src="js/accordion.js"></script>
-    <script src="js/topnav.js"></script>
-    <title>Document</title>
+    <title>FloralFinds</title>
 </head>
 
 <body>
@@ -31,12 +29,12 @@
     <section class="header">
         <nav class="navbar">
             <div class="navlogo">
-                <a href="index.html"><img src="images/logo.png"></a>
+                <a href="index.html"><img src="images/logo.png" alt="Floral Finds Logo"></a>
             </div>
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">HOME</a>
-                <a href="#news">ABOUT</a>
-                <a href="#contact">WORKSHOPS</a>
+                <a href class="active">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="flowerindex.html">INDEX CHANGE THIS</a>
                 <div class="dropdown">
                     <button class="dropbtn">CONTACT US
                         <i class="fa fa-caret-down"></i>
@@ -55,38 +53,15 @@
 
     <!--HERO-->
     <section class="hero">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="images/floral.png" class="img-content">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/floral3.jpg" class="img-content">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/img-3.JPG" class="img-content">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <div class="herobtn">
-            <button type="button" class="shopfresh" onclick="alert('Sorry, the website is currently down.')">Shop Our
-                Fresh Cuts</button>
+        
+        <div class="banner">
+            <img src="images/hero1.jpg" class="img-content" alt="Say it with flowers banner">  
+            <button type="button" class="hero-btn">Browse Flowers</button>
         </div>
     </section>
 
     <!--ABOUT-->
-    <section class="about">
+    <section class="about" id="aboutp">
         <div class="about-section">
             <p class="abt">ABOUT US</p>
             <hr>
@@ -96,8 +71,7 @@
                 From birthdays to weddings, our expert florists will create perfect bouquet to brighten up your day.
                 Order and let us deliver a smile to your loved ones!</p>
 
-            <button type="button" class="story" onclick="alert('Sorry, the website is currently down.')">View
-                All</button>
+            <button type="button" class="story">View Full Story</button>
         </div>
 
     </section>
@@ -132,7 +106,7 @@
         </div>
         <div class="card-container">
             <div class="photocard">
-                <img src="images/card1.jpg">
+                <img src="images/card1.jpg" alt="seasonal flower arrangement on ceramic vase">
                 <div class="card-content">
                     <h2>Seasonal Ceramic Vase Arrangement</h2>
                     <p>From C$30.00</p>
@@ -140,7 +114,7 @@
                 </div>
             </div>
             <div class="photocard">
-                <img src="images/card2.jpg">
+                <img src="images/card2.jpg" alt="hand-tied bouquet arrangement">
                 <div class="card-content">
                     <h2>Classic Hand-Tied Bouquet/Arrangement</h2>
                     <p>From C$20.00</p>
@@ -148,7 +122,7 @@
                 </div>
             </div>
             <div class="photocard">
-                <img src="images/card3.jpg">
+                <img src="images/card3.jpg" alt="colourful arrangement">
                 <div class="card-content">
                     <h2>Colourful Celebration Arrangement</h2>
                     <p>From C$100.00</p>
@@ -156,7 +130,7 @@
                 </div>
             </div>
             <div class="photocard">
-                <img src="images/card4.jpg">
+                <img src="images/card4.jpg" alt="floral finds special arrangement">
                 <div class="card-content">
                     <h2>Floral Finds Special<br>Bouquet/Arrangement</h2>
                     <p>From $20.00</p>
@@ -181,7 +155,7 @@
 
         <div class="row">
             <div class="testimonial-col">
-                <img src="images/user1.jpg">
+                <img src="images/user1.jpg" alt="Aya Barrera's feedback">
                 <div>
                     <h4>Beautiful blooms, excellent service!</h4>
                     <p>"I ordered a bouquet for my mother's birthday,
@@ -196,7 +170,7 @@
                 </div>
             </div>
             <div class="testimonial-col">
-                <img src="images/user2.jpg">
+                <img src="images/user2.jpg" alt="Tasia Anderson's Feedback">
                 <div>
                     <h4>Great variety and value!</h4>
                     <p>"I appreciate the wide range of options available.
@@ -212,7 +186,7 @@
             </div>
 
             <div class="testimonial-col">
-                <img src="images/user2.jpg">
+                <img src="images/user2.jpg" alt="Justin Tayo's Feedback">
                 <div>
                     <h4>Excellent customer service!</h4>
                     <p>"I had a few questions before placing my order, and their customer service was incredibly helpful
@@ -228,7 +202,7 @@
                 </div>
             </div>
             <div class="testimonial-col">
-                <img src="images/user2.jpg">
+                <img src="images/user2.jpg" alt="Karl Alonzo's Feedback">
                 <div>
                     <h4>Highly recommend for special occasions!</h4>
                     <p>"I ordered flowers for my anniversary, and they were simply breathtaking.
@@ -320,6 +294,5 @@
         </div>
 
     </section>
-    
 </body>
 </html>

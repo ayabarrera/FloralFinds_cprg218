@@ -1,138 +1,71 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1523766775147-152d0d6e2adb?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: beige;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  body {
-    background-image: url(https://images.unsplash.com/photo-1523766775147-152d0d6e2adb?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-color: beige;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.hero {
+  background-color: rgba(240, 238, 235, 0.436);
+  position: relative;
+}
 
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.img-content {
+  width: 100%;
+  height: auto;
+  display: cover;
+
+}
+
+.bannersection {
+  padding: 20px;
+}
+
+.hero-btn {
+  position: absolute; /* Position button absolutely within the banner */
+  top: 85%; /* Center vertically */
+  left: 76%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  padding: 10px 20px; 
+  background-color: #333;
+  width: 170px;
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.hero-btn:hover {
+  background-color: pink;
+  color: #333;
+}
+
+@media screen and (min-width: 500px) and (max-width:645px) {
   .hero {
-    background-color: rgba(240, 238, 235, 0.436);
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .img-content {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-  }
-  
-  .slideshow-container  {
-    max-width: 80%;
-    max-height: 600px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 20px;
-    border-radius: 10px;
-  }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 50px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: white;
-    z-index: 1000;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-  }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: .4;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    padding: 5px;
   }
 
-  .active, .dot:hover {
-    background-color: #717171;
+  .banner {
+    padding-top: 5px;
   }
 
-  .herobtn {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+  .hero-btn {
+    position: absolute; 
+    top: 87%; 
+    left: 76%; 
+    width: 100px; 
+    font-size: 8px; 
+    transform: translate(-50%, -50%);
   }
-
-  .shopfresh {
-    padding: 8px 16px;
-    background-color: rgba(15, 59, 10, 0.71);
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 16px;
-    color: white;
-    font-size: 15px;
-    width: 250px;
-}
-
-.shopfresh:hover {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 16px;
-    color: white; 
-}
-
-
-
-@media (max-width: 540px) {
-  .prev,
-  .next {
-      font-size: 20px;
-      padding: 10px;
-  }
-
-  .slideshow-container {
-    max-width: 90%; 
-}
-
-.shopfresh {
-  font-size: 10px;
-  width: 70%; 
-  max-width: 150px; 
-}
 }
