@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +20,20 @@
     <link rel="stylesheet" href="styles/testi.css">
     <link rel="stylesheet" href="styles/accordion.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/flowerindex.css">
-    <script src="js/flowerindex.js"></script>
-    <title>Bouquet Sample</title>
+    <link rel="stylesheet" href="styles/guide.css">
+    <!--JS-->
+    <script src="js/accordion.js"></script>
+    <script src="FAQ_js/general.js"></script>
+    <script src="FAQ_js/monstera.js"></script>
+    <script src="FAQ_js/snake.js"></script>
+    <script src="FAQ_js/peony.js"></script>
+
+
+    <title>FloralFinds Guide</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <section class="header">
         <nav class="navbar">
             <div class="navlogo">
@@ -33,8 +42,8 @@
             <div class="topnav" id="myTopnav">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
-                <a href="flowerindex.html" class="active">BOUQUETS</a>
-                <a href="guide.html">GUIDE</a>
+                <a href="flowerindex.html">BOUQUETS</a>
+                <a href="guide.html" class="active">GUIDE</a>
                 <div class="dropdown">
                     <button class="dropbtn">CONTACT US
                         <i class="fa fa-caret-down"></i>
@@ -49,23 +58,36 @@
             </div>
         </nav>
     </section>
-    <div class="about-section">
-        <h1>Bouquets for Every Occasion</h1>
-        <p>Browse through our collection of stunning bouquets designed for various celebrations. Whether you're planning
-            a wedding, a birthday, an everyday gesture, or an anniversary, discover how we've brought joy to our
-            customers with our exquisite floral arrangements. Let our past creations inspire your next floral choice!
-        </p>
-        <label for="occasion-select" class="container">Choose an occasion:</label>
-        <select id="occasion-select" class="selectContainer">
-            <option value="option">~ choose an occasion ~</option>
-            <option value="birthday">Birthday</option>
-            <option value="wedding">Wedding</option>
-            <option value="anniversary">Anniversary</option>
-            <option value="ceramic">Everyday</option>
-        </select>
-    </div>
-    </div>
-    <div id="image-container" class="cards-container"></div>
+    <!--END OF HEADER-->
+        <div class="faq-container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Browse through our collection of stunning bouquets designed for various celebrations. Whether you're planning
+                a wedding, a birthday, an everyday gesture, or an anniversary, discover how we've brought joy to our
+                customers with our exquisite floral arrangements. Let our past creations inspire your next floral choice!
+            </p>
+            
+            <h2>General</h2>
+            <select id="faq-dropdown">
+                <option value="">Select a question...</option>
+            </select>
+            <h2>Peony Guide</h2>
+            <select id="peony-dropdown">
+                <option value="">Select a question...</option>
+            </select>
+
+            <h2>Monstera Guide</h2>
+            <select id="monstera-dropdown">
+                <option value="">Select a question...</option>
+            </select>
+
+            <h2>Snake Plant Guide</h2>
+            <select id="snake-dropdown">
+                <option value="">Select a question...</option>
+            </select>
+        </div>
+
+        <div id="image-container" class="answer-container">
+        </div>
 
 </body>
 
