@@ -14,7 +14,7 @@
 .hero-container img {
     display: block; /* Remove inline space and align the image */
     width: 100%; /* Make the image fit within the container */
-    height: 400px; /* Maintain the aspect ratio */
+    height: auto; /* Maintain the aspect ratio */
     border-radius: 0%; /* Make the image rounded */
 }
 
@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     margin: 20px;
+    gap: 20px;
 }
 
 /* Media query for smaller screens */
