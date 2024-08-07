@@ -23,11 +23,11 @@ async function showResults() {
 async function fetchQuestions() {
   const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-CSJA66b1715aa08486420');
   const data = await response.json();
-  return data.data; // Return the array of questions
+  return data.data; 
 }
 
 function populateDropdown(dropdown, questions) {
-  dropdown.innerHTML = ''; // Clear any existing options
+  dropdown.innerHTML = ''; 
 
   const defaultOption = document.createElement('option');
   defaultOption.value = '';
