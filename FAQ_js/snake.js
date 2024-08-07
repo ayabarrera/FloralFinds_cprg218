@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', showResults);
 
 async function showResults() {
   const dropdown = document.getElementById('snake-dropdown');
-  const cardsContainer = document.getElementById('answer-container');
+  const cardsContainer = document.getElementById('image-container');
 
     const questions = await fetchQuestions();
     // Filter questions to only include IDs 11, 12, and 13
@@ -22,7 +22,7 @@ async function showResults() {
 }
 
 async function fetchQuestions() {
-  const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-z8oU66b23c8bedcc56445');
+  const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-CSJA66b1715aa08486420');
   const data = await response.json();
   return data.data; // Return the array of questions
 }

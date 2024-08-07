@@ -2,13 +2,13 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var acc = document.getElementsByClassName("accordionbtn");
-    var i;
+    const acc = document.getElementsByClassName("accordionbtn");
+    let i;
     
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+        const panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
