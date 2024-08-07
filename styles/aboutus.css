@@ -1,21 +1,27 @@
 /* styles/hero.css */
-
 .hero-container {
     max-width: 600px; /* Set the maximum width of the container */
     margin: 0 auto;   /* Center the container */
     text-align: center; /* Center the content inside the container */
-padding-top: 20px;
-overflow: hidden; /* Ensure the border wraps tightly around the image */
+    padding-top: 20px;
+    overflow: hidden; /* Ensure the border wraps tightly around the image */
     border: 25px solid#2b3d27; /* Green border around the container */
     border-radius: 100%; /* Round the border */
     padding: 0; /* Remove any padding */
+    background-color: pink;
 }
 
 .hero-container img {
     display: block; /* Remove inline space and align the image */
     width: 100%; /* Make the image fit within the container */
-    height: auto; /* Maintain the aspect ratio */
+    height: 400px; /* Maintain the aspect ratio */
     border-radius: 0%; /* Make the image rounded */
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
 /* Media query for smaller screens */
