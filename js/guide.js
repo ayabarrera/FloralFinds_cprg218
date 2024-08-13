@@ -5,7 +5,7 @@ async function showResults() {
   const cardsContainer = document.getElementById('image-container');
 
   const questions = await fetchQuestions();
-  const filteredQuestions = questions.filter(q => [11, 12].includes(q.id));
+  const filteredQuestions = questions.filter(q => [11, 12, 13, 14, 15, 18, 41, 43, 44, 46, 48, 49].includes(q.id));
   populateDropdown(dropdown, filteredQuestions);
 
   dropdown.addEventListener('change', () => {
@@ -22,7 +22,7 @@ async function showResults() {
 }
 
 async function fetchQuestions() {
-  const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-CSJA66b1715aa08486420');
+  const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-z8oU66b23c8bedcc56445');
   const data = await response.json();
   return data.data; 
 }
@@ -51,13 +51,17 @@ function displayAnswers(container, question) {
 
   const img = document.createElement('img');
   img.src = question.default_image.medium_url;
-  img.alt = question.question;
+  img.alt = 'question pictures';
 
   const name = document.createElement('h2');
   name.textContent = question.question;
 
-  card.appendChild(img);
+  const answer = document.createElement('p'); 
+  answer.textContent = question.answer;
+
   card.appendChild(name);
+  card.appendChild(img);
+  card.appendChild(answer);
 
   return card;
 }

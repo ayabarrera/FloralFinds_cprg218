@@ -41,12 +41,28 @@
     flex-wrap: wrap;
     background-color: rgba(14, 63, 22, 0.875);
     justify-content: center;
-    align-items: center;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-
-.answer-container h2 {
-    color: white;
+.cardNew {
+    display: grid;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+   justify-items: center;
 }
+
+.cardNew h2 {
+    color: wheat;
+    font-size: 40px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.cardNew p {
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
