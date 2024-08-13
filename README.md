@@ -57,3 +57,20 @@ Although we were assigned specific tasks, we were working hand-in-hand in figuri
 the codes for the sections. We thought that having just one person working on the card and
 accordion section was too much, so we ended up coding the “difficult” (accordion & card)
 section together, in-class as well. Looking for photos, videos, and fonts were also a group effort.
+
+
+Added sections:
+About page - Tasia
+Guide - Alyanna
+JavaScript & API integration - everyone
+
+
+
+At least two pages linked with a navigation menu (done)
+A responsive hero banner (done)
+A main content area with embedded images and/or other media, such as a video or iframe content (done)
+A Google font or other free web font (done)
+A responsive accordion or collapsing menu (done)
+A responsive footer (done)
+Dynamic or interactive content using an event handler (addEventListener) (done)
+Make an API network request (fetch). (done)
