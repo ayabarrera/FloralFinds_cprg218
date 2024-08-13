@@ -57,7 +57,7 @@
         
         <div class="banner">
             <img src="images/hero1.jpg" class="img-content" alt="Say it with flowers banner">  
-            <button type="button" class="hero-btn">Browse Flowers</button>
+            <button type="button" class="hero-btn" aria-label="click to browse flower selection">Browse Flowers</button>
         </div>
     </section>
 
@@ -72,7 +72,7 @@
                 From birthdays to weddings, our expert florists will create perfect bouquet to brighten up your day.
                 Order and let us deliver a smile to your loved ones!</p>
 
-            <button type="button" class="story">View Full Story</button>
+            <button type="button" class="story" aria-label="click to view full story">View Full Story</button>
         </div>
 
     </section>
@@ -81,9 +81,11 @@
     <section class="video">
         <div class="video-wrapper">
             <video muted autoplay loop>
-                <source src="Videos/flowervideo.mp4" type="video/mp4">
+                <source src="videos/flowervideo.mp4" type="video/mp4">
+                <track src="captions_en.vtt" kind="subtitles" srclang="en" label="English">
                 Your browser does not support the video tag.
             </video>
+
         </div>
         <div class="videosection">
             <h1>Summer Sprite</h1>
@@ -93,7 +95,7 @@
                 well-drained soil in full sun. Thrives in poor, sandy or rocky soils with good drainage. Tolerant of
                 heat, humidity and drought.</p>
             <div class="videobtn">
-                <button type="button" class="video-btn" onclick="alert('Sorry, the website is currently down.')">Learn
+                <button type="button" class="video-btn" aria-label="click to learn more about flowers">Learn
                     More</button>
             </div>
         </div>
@@ -111,7 +113,7 @@
                 <div class="card-content">
                     <h2>Seasonal Ceramic Vase Arrangement</h2>
                     <p>From C$30.00</p>
-                    <a href="" class="btn">Quick View</a>
+                    <a href="" class="btn" aria-label="click to view ceramic arrangements">Quick View</a>
                 </div>
             </div>
             <div class="photocard">
@@ -119,7 +121,7 @@
                 <div class="card-content">
                     <h2>Classic Hand-Tied Bouquet/Arrangement</h2>
                     <p>From C$20.00</p>
-                    <a href="" class="btn">Quick View</a>
+                    <a href="" class="btn" aria-label="click to view hand tied arrangements">Quick View</a>
                 </div>
             </div>
             <div class="photocard">
@@ -127,7 +129,7 @@
                 <div class="card-content">
                     <h2>Colourful Celebration Arrangement</h2>
                     <p>From C$100.00</p>
-                    <a href="" class="btn">Quick View</a>
+                    <a href="" class="btn" aria-label="click to view celebration arrangements">Quick View</a>
                 </div>
             </div>
             <div class="photocard">
@@ -135,12 +137,12 @@
                 <div class="card-content">
                     <h2>Floral Finds Special<br>Bouquet/Arrangement</h2>
                     <p>From $20.00</p>
-                    <a href="" class="btn">Quick View</a>
+                    <a href="" class="btn" aria-label="click to view bouquet arrangements">Quick View</a>
                 </div>
             </div>
         </div>
         <div class="viewbtn">
-            <button type="button" class="view" onclick="alert('Sorry, the website is currently down.')">View
+            <button type="button" class="view" aria-label="click to view all flower arrangements">View
                 All</button>
         </div>
     </section>
@@ -158,7 +160,7 @@
             <div class="testimonial-col">
                 <img src="images/user2.JPG" alt="Aya Barrera's feedback">
                 <div>
-                    <h4>Beautiful blooms, excellent service!</h4>
+                    <h2>Beautiful blooms, excellent service!</h2>
                     <p>"I ordered a bouquet for my mother's birthday,
                         and she absolutely loved it! The flowers were fresh and vibrant,
                         exactly as pictured on the website. Delivery was on time too."</p>
@@ -173,7 +175,7 @@
             <div class="testimonial-col">
                 <img src="images/user2.JPG" alt="Tasia Anderson's Feedback">
                 <div>
-                    <h4>Great variety and value!</h4>
+                    <h2>Great variety and value!</h2>
                     <p>"I appreciate the wide range of options available.
                         It's easy to find something for any occasion.
                         The prices are reasonable, and the flowers lasted well over a week. Very satisfied!"</p>
@@ -189,7 +191,7 @@
             <div class="testimonial-col">
                 <img src="images/user2.JPG" alt="Justin Tayo's Feedback">
                 <div>
-                    <h4>Excellent customer service!</h4>
+                    <h2>Excellent customer service!</h2>
                     <p>"I had a few questions before placing my order, and their customer service was incredibly helpful
                         and responsive.
                         They even accommodated a last-minute change to the delivery address without any hassle.
@@ -205,7 +207,7 @@
             <div class="testimonial-col">
                 <img src="images/user2.JPG" alt="Karl Alonzo's Feedback">
                 <div>
-                    <h4>Highly recommend for special occasions!</h4>
+                    <h2>Highly recommend for special occasions!</h2>
                     <p>"I ordered flowers for my anniversary, and they were simply breathtaking.
                         The online ordering process was easy, and the delivery arrived right on schedule.
                         My wife was thrilled! Will definitely be ordering again."</p>
