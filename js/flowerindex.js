@@ -13,23 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
     occasionSelect.addEventListener('change', async (event) => {
         const occasion = event.target.value;
         let query = `${occasion} bouquet`;
-
+    
         if (fallbackQueries[occasion]) {
             query = fallbackQueries[occasion];
         }
-
+    
         if (occasion) {
-            try {
-                const response = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&client_id=${apiKey}`);
+            const response = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&client_id=${apiKey}`);
+            
+            if (response.ok) {
                 const data = await response.json();
                 displayImages(data.results);
-            } catch (error) {
-                console.error('Error fetching images:', error);
+            } else {
+                console.error('Error fetching images:', response.statusText);
+                imageContainer.innerHTML = '<p>Failed to load images. Please try again later.</p>';
             }
         } else {
             imageContainer.innerHTML = '';
         }
     });
+    
 
     function displayImages(images) {
         imageContainer.innerHTML = ''; 
@@ -54,5 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+///console log
+// const apiKey = '8obA_AxSt1vPF3zO-YMt3WTkQ1htzmP08Ks2y5We9OM';
+// const query = 'bouquet of colorful flowers';
+// const encodedQuery = encodeURIComponent(query);
+// const url = `https://api.unsplash.com/search/photos?query=${encodedQuery}&client_id=${apiKey}`;
 
-  
+// fetch(url)
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.error('Error fetching images:', error);
+//     });
