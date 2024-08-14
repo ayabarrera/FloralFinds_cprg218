@@ -22,7 +22,7 @@ async function showResults() {
 }
 
 async function fetchQuestions() {
-  const response = await fetch('https://perenual.com/api/article-faq-list?key=sk-z8oU66b23c8bedcc56445');
+  const response = await fetch('https://perenual.com/api/article-faq-list?key=__GUIDE__API_KEY__');
   const data = await response.json();
   return data.data; 
 }
