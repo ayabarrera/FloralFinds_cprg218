@@ -1,25 +1,32 @@
 .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #2b3d27;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.video video {
+.video-wrapper iframe {
+    border: none;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    max-width: 800px;
-    /* Max width for the video element */
+    height: 400px;
 }
+
 
 .video-wrapper {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    justify-content: center;
 }
 
 .videosection {
     padding: 20px;
+    text-align: center;
 }
 
 .videosection h1 {
@@ -62,20 +69,12 @@
     margin-top: 16px;
     color: white;
 }
-
-/* Media queries for smaller screens */
-
 @media screen and (min-width: 320px) and (max-width:768px) {
     .video {
-        max-width: 100%;
         padding: 15px;
     }
 
-    .video video {
-        max-width: 100%;
-    }
-
-    .videosection h1{
+    .videosection h1 {
         font-size: 20px;
     }
 
@@ -87,21 +86,6 @@
 
 @media screen and (min-width: 768px) and (max-width:1199px) {
     .video {
-        max-width: 100%;
         padding: 20px;
     }
-
-    .video video {
-        max-width: 100%;
-    }
 }
-
-/* @media (max-width: 1200px) {
-    .video {
-        max-width: 100%;
-    }
-
-    .video video {
-        max-width: 100%;
-    }
-} */

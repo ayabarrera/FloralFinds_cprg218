@@ -7,17 +7,19 @@
 .faq-container {
     background-color: #f0f0f0;
     margin: 25px auto;
-    padding: 80px;
+    padding: 20px;
     align-content: center;
     border-radius: 25px;
-    height: 500px;
-    width: 70%;
+    max-width: 1200px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 .faq-container h1 {
-    text-align: left;
+    text-align: center;
     font-style: italic;
     color: rgb(6, 62, 7);
+    margin: 0 0 20px 0;
 }
 
 .faq-container h2 {
@@ -32,7 +34,9 @@
 .faq-container p {
     text-align: left;
     color: #666;
-    padding-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
@@ -66,3 +70,41 @@
     color: whitesmoke;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-container h1 {
+        font-size: 1.8rem; 
+    }
+
+    .faq-container p {
+        font-size: 0.9rem;
+    }
+    
+    .faq-container select {
+        width: 100%; 
+        font-size: 0.9rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-container h1 {
+        font-size: 1.5rem; 
+    }
+
+    .faq-container p {
+        font-size: 0.8rem; 
+    }
+
+    .faq-container select {
+        font-size: 0.8rem; 
+    }
+}
